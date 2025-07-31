@@ -1,0 +1,19 @@
+# Eclipse Framework Configuration
+# Version: ${project.version}
+config-version: "1.0"
+
+# Plugin Settings
+plugin:
+  # Enable debug logging
+  debug: false
+
+# Backup Settings
+backup:
+  # Enable automatic backups
+  enabled: true
+
+  # Maximum backups to keep
+  max-backups: 7
+
+  # Backup location (relative to plugin folder)
+  location: "backups"

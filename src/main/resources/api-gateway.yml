@@ -1,0 +1,28 @@
+# Eclipse Framework API Gateway Configuration
+# Note: API Gateway is not currently implemented
+# This configuration file is prepared for future development
+
+# Server Settings
+server:
+  # Enable API Gateway (currently not implemented)
+  enabled: false
+
+  # Server host
+  host: "localhost"
+
+  # Server port
+  port: 8080
+
+# Basic Settings for Future Implementation
+basic:
+  # Authentication type
+  auth-type: "api-key"
+
+  # Default API key
+  api-key: "eclipse-api-key-change-me"
+
+  # Enable CORS
+  cors-enabled: true
+
+  # Rate limiting (requests per minute)
+  rate-limit: 100

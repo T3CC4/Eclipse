@@ -1,0 +1,46 @@
+# Eclipse Framework Cache Configuration
+
+# Player Cache Settings
+player-cache:
+  # Enable player data caching
+  enabled: true
+
+  # Cache expiry time for offline players (minutes)
+  offline-expiry: 60
+
+  # Preload data on player join
+  preload-on-join: true
+
+  # Save data on player quit
+  save-on-quit: true
+
+  # Cleanup interval for expired cache entries (minutes)
+  cleanup-interval: 15
+
+# Data Loading Settings
+data-loading:
+  # Timeout for data loading operations (seconds)
+  load-timeout: 30
+
+  # Retry attempts for failed loads
+  retry-attempts: 3
+
+  # Delay between retry attempts (seconds)
+  retry-delay: 2
+
+  # Load data asynchronously
+  async-loading: true
+
+# Data Saving Settings
+data-saving:
+  # Timeout for data saving operations (seconds)
+  save-timeout: 30
+
+  # Retry attempts for failed saves
+  retry-attempts: 3
+
+  # Delay between retry attempts (seconds)
+  retry-delay: 2
+
+  # Save data asynchronously
+  async-saving: true

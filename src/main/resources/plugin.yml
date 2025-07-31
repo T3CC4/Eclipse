@@ -1,0 +1,4 @@
+name: Eclipse
+version: '1.0'
+main: de.tecca.eclipse.Eclipse
+api-version: '1.21'
