@@ -1,4 +1,50 @@
 name: Eclipse
-version: '1.0'
+version: 1.0.0
 main: de.tecca.eclipse.Eclipse
-api-version: '1.21'
+api-version: 1.21
+author: T3CC4
+description: Professional Minecraft Plugin Framework & API
+website: https://github.com/T3CC4/Eclipse
+
+commands:
+ps:
+    description: PluginScript management commands
+    usage: /ps <compile|package|install|list|info|reload>
+    permission: eclipse.admin
+    aliases: [pluginscript, psp]
+
+permissions:
+    eclipse.*:
+    description: All Eclipse permissions
+    default: op
+    children:
+        eclipse.admin: true
+        eclipse.script.*: true
+
+    eclipse.admin:
+      description: Eclipse administration
+      default: op
+
+    eclipse.script.*:
+      description: All script permissions
+      default: op
+      children:
+        eclipse.script.commands: true
+        eclipse.script.database: true
+        eclipse.script.events: true
+        eclipse.script.cache: true
+        eclipse.script.messages: true
+        eclipse.script.permissions: true
+        eclipse.script.security: true
+
+    eclipse.script.commands:
+      description: Allow scripts to register commands
+      default: op
+
+    eclipse.script.database:
+      description: Allow scripts to access database
+      default: op
+
+    eclipse.script.events:
+      description: Allow scripts to hook/publish events
+      default: op
